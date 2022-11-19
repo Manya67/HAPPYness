@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600;1,800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="pageone.css">
+    <title>FINAL!</title>
+
+    <!-- chart js  -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Year', 'Sales', 'Expenses'],
+                ['2004', 1000, 400],
+                ['2005', 1170, 460],
+                ['2006', 660, 1120],
+                ['2007', 1030, 540]
+            ]);
+
+            var options = {
+                title: 'Company Performance',
+                curveType: 'function',
+                legend: { position: 'bottom' }
+            };
+
+            var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+            chart.draw(data, options);
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="onepage" id="blur">
+        <nav class="navbar navbar-expand-lg sticky-top" id="navhere">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" id="nav2">HAPPYness.</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="navl1" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  active" id="navl2" href="#">Working</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  active" id="navl3" href="#">Start a new day</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  active" id="navl4">Graph</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  active" id="navl5">Contact Us</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <button class="btn" id="log" onclick="toggle()">Login</button>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="front">
+            <div class="mcontent">
+                <!-- <div class="mainhead"> -->
+                <h1>HAPPYness :)</h1>
+                <!-- </div> -->
+                <!-- <div class="sc"> -->
+                <a href="" onclick="toggle()" class="login2">Lets's get happy.</a>
+                <h3 class="quote">Trying 1% every day. </h3>
+                <!-- </div> -->
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <!-- SECOND  -->
+        <div class="second">
+            <div class="wrapper">
+                <div class="sechead">
+                    <h2>HOW IT WORKS?</h2>
+                </div>
+                <div class="center-line">
+                    <a href="#" class="scroll-icon"><i class="fas fa-caret-up"></i></a>
+                </div>
+                <div class="row row-1">
+                    <section>
+                        <i class="icon"></i>
+                        <div class="details">
+                            <span class="title">Title of Section 1</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium
+                            maiores,
+                            sint eos vero sapiente voluptas debitis dicta dolore.</p>
+                    </section>
+                </div>
+                <div class="row row-2">
+                    <section>
+                        <i class="icon fas fa-star"></i>
+                        <div class="details">
+                            <span class="title">Title of Section 2</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium
+                            maiores,
+                            sint eos vero sapiente voluptas debitis dicta dolore.</p>
+                    </section>
+                </div>
+                <div class="row row-1">
+                    <section>
+                        <i class="icon fas fa-rocket"></i>
+                        <div class="details">
+                            <span class="title">Title of Section 3</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium
+                            maiores,
+                            sint eos vero sapiente voluptas debitis dicta dolore.</p>
+                    </section>
+                </div>
+                <div class="row row-2">
+                    <section>
+                        <i class="icon fas fa-globe"></i>
+                        <div class="details">
+                            <span class="title">Title of Section 4</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium
+                            maiores,
+                            sint eos vero sapiente voluptas debitis dicta dolore.</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- NEW DAY  -->
+
+        <div class="entry">
+            <h2>Enter a NEW Day</h2>
+            <div class="contactform">
+                <form action="">
+
+                    <div class="cinputbox">
+                        <label for="day" class="cdetails">Enter day number</label>
+                        <!-- <input id="day" type="text" placeholder="enter in format of Day 1" required> -->
+                        <select name="" id="day">
+                            <option value="day">Day 1</option>
+                            <option value="day">Day 2</option>
+                            <option value="day">Day 3</option>
+                            <option value="day">Day 4</option>
+                            <option value="day">Day 5</option>
+                            <option value="day">Day 6</option>
+                            <option value="day">Day 7</option>
+                        </select>
+                    </div>
+                    <div class="cinputbox">
+                        <label class="cdetails">tasks you did</label>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="......" required></textarea>
+                    </div>
+                    <div class="cinputbox">
+                        <label for="happy" class="cdetails">Happiness Score</label>
+                        <input id="happy" type="number" placeholder="Enter a number out of 10" required>
+                    </div>
+
+                    <div class="cinputbox">
+                        <input type="submit" required>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <!-- GRAPH -->
+        <div class="graph">
+            <h2>Graph</h2>
+            <div id="curve_chart" class="chart"></div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- FOOTER -->
+        <div class="footer" class="sticky-footer">
+            <div class="footer-content">
+                <!-- <div class="footer-section about">
+                    <h1>About Us</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, saepe vel blanditiis iure
+                        dolorem
+                        pariatur distinctio deserunt sequi molestias quidem, laudantium sunt nemo maiores, quis ducimus
+                        optio obcaecati omnis? Blanditiis!</p>
+
+                    <div class="contact">
+                        <span><i></i>&nbsp; 989-263-2324</span>
+                    </div>
+                </div> -->
+                <div class="footer-section links">
+                    <h2> QUICK LINKS </h2>
+                    <br>
+                    <ul>
+                        <a href="">
+                            <li>HOME</li>
+                        </a>
+                        <a href="">
+                            <li>WORKING</li>
+                        </a>
+                        <a href="">
+                            <li>SIGN UP</li>
+                        </a>
+
+                    </ul>
+                </div>
+                <div class="footer-section contact-form">
+                    <h2>Contact us</h2>
+                    <br>
+                    <form action="">
+                        <input type="email" name="email" class="text-input contact-input" placeholder="your email ..">
+                        <textarea name="message" class="text-input contact-input" id="" cols="30" rows="5"
+                            placeholder="your message.."></textarea>
+                        <button id="send">SEND</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; copywrite content
+            </div>
+        </div>
+        
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- LOGIN -->
+    <div id="popup">
+
+        <div class="center">
+            <h1>LOGIN</h1>
+            <form action="" method="post">
+                <div class="linputbox">
+                    <!-- <span class="ldetails">Username</span>
+                <input type="text" placeholder="Enter your Username" required class=""> -->
+                    <input type="email" class="inputbox" placeholder="Enter your EMail" required>
+                </div>
+                <div class="linputbox">
+                    <!-- <span class="ldetails">Password</span>
+                <input type="password" placeholder="Enter Password" required class=""> -->
+                    <input type="password" class="inputbox" placeholder="Enter your password" required>
+                </div>
+                <div class="pass">
+                    Forgot password!
+                </div>
+                <input type="submit" value="Login">
+                <span></span>
+                <div class="signuplink">
+                    Not a member? <a href=""> Sign Up</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- SIGN UP -->
+    <!-- <div id="popup2">
+
+        <div class="center">
+            <h1>SIGN UP</h1>
+            <form action="" method="post">
+                <div class="linputbox">
+                    <input type="email" class="inputbox" placeholder="Enter your EMail" required>
+                </div>
+                <div class="linputbox">
+                    <input type="password" class="inputbox" placeholder="Enter your password" required>
+                </div>
+                <div class="linputbox">
+                     <input type="password" class="inputbox" placeholder="Check your password" required>
+                </div>
+                
+                <input type="submit" value="signin">
+                <span></span>
+                <div class="loginlink">
+                    Already a member? <a href=""> LogIN</a>
+                </div>
+            </form>
+        </div>
+    </div> -->
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+        function toggle() {
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active');
+            var popup = document.getElementById('popup');
+            popup.classList.toggle('active');
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
